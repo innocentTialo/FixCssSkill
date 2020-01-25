@@ -1,0 +1,92 @@
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(50%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+.package__list {
+    max-width: 88rem;
+    margin: auto;
+}
+
+.package {
+    display: block;
+    width: 80%;
+    padding: 2rem;
+    border: 4px solid #0e4f1f;
+    margin: 1rem 0;
+    text-decoration: none;
+    border-left: none;
+    position: relative;
+}
+
+.package:hover,
+.package:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #ffa500;
+}
+
+.package__title {
+    font-weight: bold;
+    color: #0e4f1f;
+}
+
+.package__badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+    margin: 1.25rem;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.package__subtitle {
+    color: #979797;
+}
+
+.package__description {
+    color: #0e4f1f;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #0e4f1f;
+    font: 700 1.2rem "AnonimousPro", sans-serif;
+    /*shorthand of font property may respect such order
+        font: font-style font-variant font-weight font-size/line-height font-family;
+    */
+}
+
+.package__plus {
+    background: #b5ffc8;
+}
+
+.package__free {
+    background: #caffe4;
+    float: right;
+    border-left: 4px solid #0e4f1f;
+    border-right: none;
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.package__premium {
+    background: #0e4f1f;
+}
+
+.package__premium .package__title {
+    color: white;
+}
+
+@media (min-width: 1400px) {
+    .package {
+        border: 4px solid #0e4f1f;
+    }
+}
